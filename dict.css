@@ -1,0 +1,55 @@
+tr:nth-child(odd) {
+  color: rgb(11, 124, 35);
+}
+tr:nth-child(even) {
+  color: blue;
+}
+h1 {
+  height: 70px;
+  background-color: rgb(99, 109, 192);
+  vertical-align: middle;
+  /* padding: 10px 0; */
+  font-size: 60px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+#inputArea {
+  height: 50px;
+  background-color: rgb(152, 206, 228);
+  font-size: 25px;
+  vertical-align: middle;
+  padding-top: 11px;
+}
+
+#onLookup {
+  font-size: 20px;
+  vertical-align: middle;
+  background-color: rgb(109, 150, 15);
+}
+
+#term {
+  height: 25px;
+  width: 300px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+th {
+  color: red;
+  font-size: 25px;
+}
+
+#w3c {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+#word {
+  color: rgb(55, 7, 95);
+  font-size: 30px;
+}
