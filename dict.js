@@ -19,7 +19,8 @@ function lookupWord() {
   });
 }
 function showResult(data) {
-  $("#tbodyid").empty();  
+  $("#tbodyid").empty(); 
+  $("#word").html($("#term").val().trim());
   if($("#term").val().trim()==""){
     $("#tbodyid").append(
     "<th>Sorry,The term was not inputed. Please input the term. </th>"
@@ -29,7 +30,7 @@ function showResult(data) {
       "<th>Sorry,The word ( "+$("#term").val()+" ) was not found in [englishdictionary]. Please change another word. </th>"
     );
   }else{
-    $("#word").html($("#term").val());
+    
     for (var i in data) {
       $("#tbodyid").append(
         "<tr><td>" +

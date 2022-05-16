@@ -23,7 +23,7 @@ var searcWord = async function (req, res) {
   connection.query(
     //"SELECT * FROM entries.entries where word = '" + req.body.term+"'",  //local
     "SELECT * FROM heroku_1093db72dd46d72.entries where word = '" +
-    req.query.term +
+    req.query.term.trim() +
       "'", //reome heroku mysql
     (err, rows, fields) => {
       if (err) throw err;
